@@ -1,0 +1,80 @@
+/* Start variable */
+:root{
+    --main-color: #2196f3;
+    --main-colro-alt: #1787e0;
+}
+/* End variables */
+
+/* Start framework */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Cairo" , sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px){
+        .container {
+            width: 750px;
+        }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container {
+      width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container {
+      width: 1170px;
+    }
+}
+/* End framework */
+/* Start header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: normal;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+header a{
+    font-size: 18px;
+    font-weight: 50;
+}
+header li:hover a{
+    color: var(--main-color);
+}
+header .website-link a{
+    color: var(--main-color);
+    font-size: 23px;
+    font-weight: bold;
+}
+/* End header */
